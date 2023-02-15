@@ -1,0 +1,10 @@
+#tinh tong n so chinh phuon
+ds=map(int,input().split())
+n=int(input('so phần tử can tinh tong '))
+s=0
+for i in ds:
+    if n!=0 and (int(i**1/2))*2==i:
+        n=n-1
+        s=s+i
+        print(i,'la so chinh phuong')
+print('tong cac so chinh phuong',s)
