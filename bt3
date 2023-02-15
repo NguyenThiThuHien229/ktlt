@@ -1,0 +1,6 @@
+#tong n so
+n=map(int,input('nhap so ').split())
+s=0
+for i in n:
+    s=s+i
+print('tong',s)
