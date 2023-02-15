@@ -1,0 +1,13 @@
+#cho tai khoan ngan hang, lãi 1 tháng 0.5%. Khi nào tài khoản có 100 triệu
+acc=int(input('so tien trong tai khoan '))
+m=0
+def function (n,m):
+    a=n*(1+0.005)
+    if a < 100000000:
+        m=m+1
+        function(a,m)
+    else:
+        x=(100000000/n-1)/0.005
+        m=m+x
+        print('tk co 100 tr sau ',m, tháng)
+function(acc,m)
